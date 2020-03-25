@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# current workdir is /subdir
+cd ..
+
 # push every config
 cd config
 for config in *
