@@ -3,4 +3,5 @@
 # current workdir is /subdir
 cd ..
 
-docker build -t "jusito/build-order:build" .
+
+docker build -t "jusito/build-order:build" -f "./subdir/Dockerfile" .
