@@ -1,6 +1,0 @@
-#!/bin/sh
-
-# should fail
-ls -lA .
-
-exit 100

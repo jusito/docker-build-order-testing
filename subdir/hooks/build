@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# current workdir is /subdir
+cd ..
+
+docker build -t "jusito/build-order:build" .
