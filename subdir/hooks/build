@@ -4,4 +4,4 @@
 cd ..
 
 
-docker build -t "jusito/build-order:build" -f "./subdir/Dockerfile" .
+docker build -t "jusito/build-order:latest" -f "./subdir/Dockerfile" .
