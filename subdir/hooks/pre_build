@@ -1,0 +1,11 @@
+#!/bin/sh
+
+echo "Branch/Tag: $SOURCE_BRANCH"
+
+TAG_POSTFIX=""
+if [ "$SOURCE_BRANCH" = "master" ]; then
+	TAG_POSTFIX=""
+else
+	TAG_POSTFIX="_develop"
+fi
+export TAG_POSTFIX

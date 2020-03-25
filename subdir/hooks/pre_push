@@ -4,9 +4,11 @@
 cd ..
 
 # push every config
-cd config
-for config in *
-do
-	docker build -t "$DOCKER_REPO:$config" "$config/."
-	docker push "$DOCKER_REPO:$config"
-done
+if cd config; then
+	for config in *
+	do
+		docker push "${DOCKER_REPO}:${config}${TAG_POSTFIX}"
+	done
+else
+	exit 20
+fi
