@@ -1,6 +1,8 @@
 #!/bin/sh
 . hooks/shared.sh
 
+docker push "${DOCKER_REPO}:${TAG_BASE}${TAG_POSTFIX}"
+
 # push every config
 if cd config; then
 	for config in *

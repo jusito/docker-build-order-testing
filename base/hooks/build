@@ -1,7 +1,7 @@
 #!/bin/sh
 . hooks/shared.sh
 
-docker build -t "jusito/build-order:${TAG_BASE}${TAG_POSTFIX}" -f "./base/Dockerfile" .
+docker build -t "${DOCKER_REPO}:${TAG_BASE}${TAG_POSTFIX}" -f "./base/Dockerfile" .
 
 # push every config
 if cd config; then
