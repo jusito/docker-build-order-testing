@@ -1,5 +1,5 @@
 #!/bin/sh
-. shared.sh
+. hooks/shared.sh
 
 # push every config
 if cd config; then

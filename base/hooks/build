@@ -1,5 +1,5 @@
 #!/bin/sh
-. shared.sh
+. hooks/shared.sh
 
 docker build -t "jusito/build-order:${TAG_BASE}${TAG_POSTFIX}" -f "./base/Dockerfile" .
 
