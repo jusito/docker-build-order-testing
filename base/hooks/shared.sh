@@ -11,7 +11,7 @@ if [ "$SOURCE_BRANCH" = "master" ]; then
 	TAG_BASE="latest"
 	TAG_POSTFIX=""
 else
-	TAG_BASE="latest"
+	TAG_BASE="latest2"
 	TAG_POSTFIX="_develop"
 fi
 
