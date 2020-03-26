@@ -1,7 +1,5 @@
 #!/bin/sh
-
-# current workdir is /subdir
-cd ..
+. shared.sh
 
 # push every config
 if cd config; then
